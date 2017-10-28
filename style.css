@@ -1,0 +1,87 @@
+/*------------------------------------*\
+		Created By Erik Alfredsson
+\*------------------------------------*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 0;
+}
+
+a:visited {
+    color: #000;
+}
+
+.credit {
+    font-size: 12px;
+    width: 400px;
+}
+
+.credit span {
+    display: inline-block;
+    width: 50px;
+}
+
+.credit input {
+    display: inline-block;
+    width: 280px;
+}
+
+.credit button {
+    display: inline-block;
+    width: 50px;
+}
+
+
+/*
+*  Settings
+*/
+
+.settings {
+    display: flex;
+    justify-content: space-around;
+}
+
+.settings__button {
+    display: flex;
+    flex-direction: column;
+}
+
+.settings__button img {
+    width: 100px;
+    opacity: 0.2;
+}
+
+.settings__button img:hover {
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.settings__button .active {
+    opacity: 0.9;
+}
+
+.settings__button .active:hover {
+    opacity: 1;
+}
+
+
+/*
+*  Credit
+*/

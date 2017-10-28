@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "DN - Fri tillgång",
+    "description": "Detta tillägg tillåter dig att läsa alla DN's låsta artiklar.",
+    "version": "1.1",
+    "author": "Erik Alfredsson",
+    "icons": {
+        "16": "dn16.png",
+        "48": "dn48.png",
+        "128": "dn128.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "DN Unlocked"
+    },
+    "content_scripts": [{
+        "css": ["dn.css"],
+        "js": ["jquery-3.2.1.min.js", "dn.js"],
+        "matches": ["https://www.dn.se/*"]
+    }],
+    "permissions": [
+        "tabs", "storage"
+    ]
+}

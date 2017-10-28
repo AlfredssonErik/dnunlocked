@@ -1,0 +1,17 @@
+/*------------------------------------*\
+		Created By Erik Alfredsson
+\*------------------------------------*/
+
+.article__body--mask .article__lead {
+    overflow: auto !important;
+    position: static !important;
+    max-height: 100% !important;
+}
+
+.article__premium-content {
+    display: block !important;
+}
+
+.ad--rich-media-premium:not(.ad--rich-media-premium--hidden)~.header {
+    margin-top: 0 !important;
+}
