@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "DN - Fri tillgång",
+    "description": "Obegränsad tillgång till Dagens Nyheter. Döljer paywall, annonser och pop-uper, läs obegränsat med artiklar utan störande innehåll.",
+    "version": "1.2",
+    "author": "Erik Alfredsson",
+    "icons": {
+        "16": "dn16.png",
+        "48": "dn48.png",
+        "128": "dn128.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "DN Unlocked"
+    },
+    "content_scripts": [{
+        "css": ["dn.css"],
+        "js": ["jquery-3.2.1.min.js", "dn.js"],
+        "matches": ["https://www.dn.se/*"]
+    }],
+    "permissions": [
+        "tabs", "storage"
+    ]
+}
